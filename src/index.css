@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: dark --default;
+   }
+
+@layer Components{
+    .ecard{
+        @apply h-50 w-100 relative bg-transparent border-2 border-indigo-800 p-5 m-5 rounded-md flex items-center justify-center flex-col space-y-3 cursor-pointer hover:scale-[1.05] max-md:w-80
+    }
+    .etitle{
+        @apply text-center text-primary font-bold uppercase max-md:text-sm
+    }
+    .ep{
+        @apply text-[12px] text-gray-400 max-md:text-[10px]
+    }
+    .title{
+        @apply text-5xl text-center text-primary font-bold mb-5
+    }
+    .eicon{
+        @apply text-4xl text-primary 
+    }
+    .scard{
+        @apply h-50 w-80 bg-transparent border-2 border-indigo-800 p-5 rounded-md flex items-center justify-center flex-col space-y-3 cursor-pointer hover:scale-[1.05] max-md:h-30
+    }
+}
+
+@layer base{
+    i{
+        @apply text-primary text-xl mb-2
+    }
+}
+
+.perspective {
+    perspective: 1000px;
+  }
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
