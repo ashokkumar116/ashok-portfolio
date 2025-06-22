@@ -19,7 +19,7 @@ This is my personal portfolio website built using React and Tailwind CSS. It hig
 
 - React JS
 - Tailwind CSS
-- EmailJS (or similar) for contact form
+- EmailJS for contact form
 
 ## Live Demo
 
