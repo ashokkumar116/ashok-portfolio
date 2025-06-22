@@ -1,12 +1,28 @@
-# React + Vite
+# Ashok Kumar P – Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built using React and Tailwind CSS. It highlights my background, skills, education, and projects with a clean and responsive design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Hero section with my name and dynamic role animation (e.g., Full Stack Developer, Java Developer)
+- About page with a short intro and background
+- Educational details page showing my academic journey
+- Skills page listing my technical skills clearly
+- Projects page with some of my top development works
+- Contact form with:
+  - Email integration (sends mail to me)
+  - Toast message shown on successful form submission
+- Responsive design – works well on all devices
+- Footer with copyright
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React JS
+- Tailwind CSS
+- EmailJS (or similar) for contact form
+
+## Live Demo
+
+View the live portfolio here:  
+[https://ashokkumar-p.netlify.app](https://ashokkumar-p.netlify.app)
+
