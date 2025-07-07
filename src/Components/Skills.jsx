@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt,FaNodeJs } from "react-icons/fa";
 import { RiJavaLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMysql } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+
 
 const skills = [
   {
@@ -16,6 +18,16 @@ const skills = [
     title: "Tailwind CSS",
     icon: RiTailwindCssFill,
     desc: "Experienced in Tailwind CSS for responsive, utility-first UI designs with scalable code structures.",
+  },
+  {
+    title: "Node.Js",
+    icon: FaNodeJs,
+    desc: "Capable of building scalable backends with RESTful APIs, authentication, file handling, and async operations.",
+  },
+  {
+    title: "Express.Js",
+    icon: SiExpress,
+    desc: "Skilled in API routing , managing protected routes, middleware, JWT auth with cookies, file uploads, and custom error handling in production-ready backend features.",
   },
   {
     title: "Java",

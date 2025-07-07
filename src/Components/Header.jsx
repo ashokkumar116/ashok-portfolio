@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import resume from "../assets/ASHOK KUMAR P.pdf";
+import resume from "../assets/ASHOK KUMAR P RESUME.pdf";
 
 const roles = [
+  "Full Stack Developer",
   "Front End Developer",
+  "Back End Developer",
   "React.js Developer",
+  "Node.js Developer",
   "Java Developer",
 ];
 

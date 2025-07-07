@@ -4,8 +4,30 @@ import weather from "../assets/images/weather.png";
 import qrcode from "../assets/images/qrcode.png";
 import tictactoe from "../assets/images/tictactoe.png";
 import memory from "../assets/images/memory.png";
+import notesApp from "../assets/images/NotesApp.jpeg"
+import TaskPilot from "../assets/images/TaskPilot.jpeg"
 
 const projects = [
+  {
+    title: "Employee Task Management System",
+    description:
+      "A role-based full-stack application for managing employees, assigning tasks, and tracking progress. Features authentication, image upload, protected routes, dynamic roles/positions, and charts for data visualization.",
+    category: "Full Stack",
+    image: TaskPilot,
+    tech: ["React.js", "PrimeReact", "Tailwind CSS", "Node.js", "Express.js", "MySQL", "JWT", "Multer", "Chart.js"],
+    github: "https://github.com/ashokkumar116/employee_task_management_system",
+    live: "https://taskpilot-by-ashok-kumar-p.netlify.app",
+  },
+  {
+    title: "Modern Notes Taking App",
+    description:
+      "A full-stack notes app with user authentication (JWT + cookies), allowing users to create, update, and delete notes. Includes protected routes and a rich text editor.",
+    category: "Full Stack",
+    image: notesApp,
+    tech: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MySQL", "JWT", "Cookies", "Multer"],
+    github: "https://github.com/ashokkumar116/modern_notes_app",
+    live: "https://notes-app-by-ashok.netlify.app",
+  },
   {
     title: "Weather App",
     description:
@@ -48,7 +70,7 @@ const projects = [
   },
 ];
 
-const categories = ["All", "API", "Games"];
+const categories = ["All","Full Stack", "API", "Games"];
 
 export const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
