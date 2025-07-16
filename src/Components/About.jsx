@@ -61,18 +61,18 @@ export const About = () => {
                     <img
                         src={ashok}
                         alt="Ashok Kumar"
-                        className="rounded-md h-130 ml-10 max-xl:ml-2 max-md:h-100"
+                        className="rounded-md h-130 ml-10 max-xl:ml-2 max-md:h-100 "
                     />
                 </motion.div>
 
                 <motion.div
-                    className="right-a flex-2"
+                    className="right-a flex-2 max-2xl:flex-2 2xl:max-3xl:justify-center items-center"
                     variants={fadeUpVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    <p className="text-justify max-md:w-full">
+                    <p className="text-justify max-lg:w-full max-xl:pl-3 max-2xl:max-2xl:pl-15">
                         I'm a passionate and dedicated Full Stack Developer from
                         a small village in Ariyalur, Tamil Nadu. I hold a
                         Bachelor's degree in Computer Science and Engineering
@@ -93,7 +93,7 @@ export const About = () => {
                     </p>
 
                     <motion.h1
-                        className="text-2xl text-primary font-bold mt-5"
+                        className="text-2xl text-primary font-bold mt-5 max-xl:pl-3 max-2xl:max-2xl:pl-15"
                         variants={fadeUpVariant}
                         initial="hidden"
                         whileInView="visible"
@@ -102,11 +102,11 @@ export const About = () => {
                         My Work Principles
                     </motion.h1>
 
-                    <div className="principles grid grid-cols-1 sm:grid-cols-2 py-5 gap-5 cursor-pointer">
+                    <div className="principles grid grid-cols-1 sm:grid-cols-2 py-5 gap-5 cursor-pointer max-xl:pl-3 max-2xl:max-2xl:pl-15">
                         {principles.map((item, index) => (
                             <motion.div
                                 key={index}
-                                className="card-p h-35 max-xl:h-30 rounded-md w-full bg-transparent border-2 text-center flex flex-col justify-center items-center hover:scale-105 border-indigo-600 p-3 hover:shadow-xl transition-all duration-300"
+                                className="card-p h-30 max-xl:h-30 max-2xl:h-23 max-2xl:text-sm rounded-md w-full bg-transparent border-2 text-center flex flex-col justify-center items-center hover:scale-105 border-indigo-600 p-3 hover:shadow-xl transition-all duration-300"
                                 onMouseOver={() => setHoveredCard(index)}
                                 onMouseOut={() => setHoveredCard(null)}
                                 variants={fadeUpVariant}
@@ -121,7 +121,7 @@ export const About = () => {
                                     {item.title}
                                 </span>
                                 {hoveredCard === index && (
-                                    <p className="text-sm mt-2 text-gray-400 transition duration-500 ease-in-out">
+                                    <p className="text-sm max-xl:text-sm max-2xl:text-[10px] mt-2 text-gray-400 transition duration-500 ease-in-out">
                                         {item.desc}
                                     </p>
                                 )}

@@ -34,12 +34,12 @@ export const Footer = () => {
             {social.map((item)=>{
                 const IconComponent = item.icon;
                 return(
-                    <a href={item.link}><IconComponent className='text-5xl border-2 border-primary text-primary rounded-full p-3 hover:scale-[1.05]' /></a>
+                    <a href={item.link}><IconComponent className='text-5xl border-2 border-primary text-primary rounded-full p-3 hover:scale-[1.05] transition duration-300 ease-in-out' /></a>
                 )
             })}
         </div>
-        <div className="credit mt-5">
-            <p>Designed and Developed by <a className='text-primary font-bold cursor-pointer' href="#">ASHOK KUMAR P</a></p>
+        <div className="credit mt-5 text-center max-sm:text-sm py-5 ">
+            <p>&copy; Designed and Developed by <a className='text-primary font-bold cursor-pointer' href="#">ASHOK KUMAR P</a></p>
         </div>
     </div>
   )
