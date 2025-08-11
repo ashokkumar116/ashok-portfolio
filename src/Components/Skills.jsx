@@ -40,13 +40,13 @@ const skills = [
     category: "Frontend",
     title: "HTML5",
     icon: FaHtml5,
-    desc: "Creating semantic, accessible, and SEO-friendly web pages.",
+    desc: "Proficient Creating semantic, accessible, and SEO-friendly web pages.",
   },
   {
     category: "Frontend",
     title: "CSS3",
     icon: FaCss3Alt,
-    desc: "Designing elegant layouts with Flexbox, Grid, and responsive media queries.",
+    desc: "Skilled in Designing elegant layouts with Flexbox, Grid, and responsive media queries.",
   },
   {
     category: "Frontend",
@@ -67,19 +67,19 @@ const skills = [
     category: "UI Design",
     title: "DaisyUI",
     icon: SiDaisyui,
-    desc: "Experience using DaisyUI to quickly build Tailwind-based components with consistent design.",
+    desc: "Experienced in using DaisyUI to quickly build Tailwind-based components with consistent design.",
   },
   {
     category: "UI Design",
     title: "Chart.js",
     icon: SiChartdotjs,
-    desc: "Creating interactive and responsive data visualizations with Chart.js.",
+    desc: "Skilled in Creating interactive and responsive data visualizations with Chart.js.",
   },
   {
     category: "UI Design",
     title: "Recharts",
     icon: FaChartPie,
-    desc: "Creating interactive and responsive data visualizations with Recharts.",
+    desc: "Skilled in Creating interactive and responsive data visualizations with Recharts.",
   },
 
 
@@ -88,13 +88,13 @@ const skills = [
     category: "Backend",
     title: "Node.js",
     icon: FaNodeJs,
-    desc: "Building scalable backends with REST APIs, authentication, file handling, and async operations.",
+    desc: "Proficient in Building scalable backends with REST APIs, authentication, file handling, and async operations.",
   },
   {
     category: "Backend",
     title: "Express.js",
     icon: SiExpress,
-    desc: "API routing, middleware, JWT auth with cookies, file uploads, and production-ready backend features.",
+    desc: "Skilled in API routing, middleware, JWT auth with cookies, file uploads, and production-ready backend features.",
   },
 
   // ===== Database =====
@@ -111,19 +111,19 @@ const skills = [
     category: "Deployment",
     title: "Netlify",
     icon: SiNetlify,
-    desc: "Frontend hosting platform for React apps with Git-based deployment, Continuous Integration and fast CDN.",
+    desc: "Skilled in Frontend hosting for React apps with Git-based deployment, Continuous Integration and fast CDN.",
   },
   {
     category: "Deployment",
     title: "Render",
     icon: SiRender,
-    desc: "Backend server hosting for Node.js APIs with Git deployment, SSL support, and managed services.",
+    desc: "Proficient in Backend server hosting for Node.js APIs with Git deployment, SSL support, and managed services.",
   },
   {
     category: "Deployment",
     title: "Cloudinary",
     icon: SiCloudinary,
-    desc: "Media asset storage with automatic optimization, resizing, and global CDN delivery.",
+    desc: "Skilled in Media asset storage with automatic optimization, resizing, and global CDN delivery.",
   },
    {
     category: "Deployment",
@@ -135,7 +135,7 @@ const skills = [
     category: "Deployment",
     title: "cPanel",
     icon: FaCpanel,
-    desc: "Experience deploying full-stack apps using cPanel with database integration and custom domains.",
+    desc: "Experience in deploying full-stack apps using cPanel with database integration and custom domains.",
   },
 
   // ===== Programming Languages =====
@@ -152,7 +152,7 @@ const skills = [
     category: "Version Control",
     title: "Git & GitHub",
     icon: FaGitAlt,
-    desc: "Version control, branching, merging, and collaborative workflows.",
+    desc: "Skilled in Version control, branching, merging, and collaborative workflows.",
   },
 
   // ===== Development Tools =====
