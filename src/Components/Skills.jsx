@@ -17,6 +17,7 @@ import { SiDaisyui } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { SiIntellijidea } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
+import { FaChartPie } from "react-icons/fa";
 
 
 
@@ -73,6 +74,12 @@ const skills = [
     title: "Chart.js",
     icon: SiChartdotjs,
     desc: "Creating interactive and responsive data visualizations with Chart.js.",
+  },
+  {
+    category: "UI Design",
+    title: "Recharts",
+    icon: FaChartPie,
+    desc: "Creating interactive and responsive data visualizations with Recharts.",
   },
 
 

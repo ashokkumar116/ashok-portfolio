@@ -24,7 +24,7 @@ const projects = [
             "MySQL",
             "JWT",
             "Multer",
-            "Chart.js"
+            "Recharts"
         ],
         github: "https://github.com/ashokkumar116/Quenzy---Ecommerce-Website",
         live: "https://quenzy.netlify.app/",
