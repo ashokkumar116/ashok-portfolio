@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt,FaNodeJs } from "react-icons/fa";
@@ -6,60 +6,172 @@ import { RiJavaLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMysql } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
+import { SiPrimereact } from "react-icons/si";
+import { SiNetlify } from "react-icons/si";
+import { SiRender } from "react-icons/si";
+import { SiClevercloud } from "react-icons/si";
+import { SiCloudinary } from "react-icons/si";
+import { SiChartdotjs } from "react-icons/si";
+import { FaCpanel } from "react-icons/fa";
+import { SiDaisyui } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+import { SiIntellijidea } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+
+
 
 
 const skills = [
+  // ===== Frontend =====
   {
+    category: "Frontend",
     title: "React.js",
     icon: FaReact,
-    desc: "Proficient in React.js for building dynamic, component-based user interfaces. Skilled in state management, hooks, routing, and integrating APIs.",
+    desc: "Proficient in building dynamic, component-based UIs with state management, hooks, routing, and API integration.",
   },
   {
+    category: "Frontend",
     title: "Tailwind CSS",
     icon: RiTailwindCssFill,
-    desc: "Experienced in Tailwind CSS for responsive, utility-first UI designs with scalable code structures.",
+    desc: "Skilled in responsive, utility-first UI designs with scalable and maintainable code structures.",
   },
   {
-    title: "Node.Js",
+    category: "Frontend",
+    title: "HTML5",
+    icon: FaHtml5,
+    desc: "Creating semantic, accessible, and SEO-friendly web pages.",
+  },
+  {
+    category: "Frontend",
+    title: "CSS3",
+    icon: FaCss3Alt,
+    desc: "Designing elegant layouts with Flexbox, Grid, and responsive media queries.",
+  },
+  {
+    category: "Frontend",
+    title: "JavaScript",
+    icon: IoLogoJavascript,
+    desc: "Strong in core JavaScript concepts, DOM manipulation, events, and interactivity.",
+  },
+
+  // ===== UI Design =====
+
+  {
+    category: "UI Design",
+    title: "PrimeReact",
+    icon: SiPrimereact,
+    desc: "Experienced in using PrimeReact UI components for building modern, responsive interfaces.",
+  },
+  {
+    category: "UI Design",
+    title: "DaisyUI",
+    icon: SiDaisyui,
+    desc: "Experience using DaisyUI to quickly build Tailwind-based components with consistent design.",
+  },
+  {
+    category: "UI Design",
+    title: "Chart.js",
+    icon: SiChartdotjs,
+    desc: "Creating interactive and responsive data visualizations with Chart.js.",
+  },
+
+
+  // ===== Backend =====
+  {
+    category: "Backend",
+    title: "Node.js",
     icon: FaNodeJs,
-    desc: "Capable of building scalable backends with RESTful APIs, authentication, file handling, and async operations.",
+    desc: "Building scalable backends with REST APIs, authentication, file handling, and async operations.",
   },
   {
-    title: "Express.Js",
+    category: "Backend",
+    title: "Express.js",
     icon: SiExpress,
-    desc: "Skilled in API routing , managing protected routes, middleware, JWT auth with cookies, file uploads, and custom error handling in production-ready backend features.",
+    desc: "API routing, middleware, JWT auth with cookies, file uploads, and production-ready backend features.",
+  },
+
+  // ===== Database =====
+  {
+    category: "Database",
+    title: "MySQL",
+    icon: SiMysql,
+    desc: "Proficient in DDL, DML, and DQL with efficient query writing including JOINs and indexing.",
+  },
+ 
+
+  // ===== Deployment Tools =====
+  {
+    category: "Deployment",
+    title: "Netlify",
+    icon: SiNetlify,
+    desc: "Frontend hosting platform for React apps with Git-based deployment, Continuous Integration and fast CDN.",
   },
   {
+    category: "Deployment",
+    title: "Render",
+    icon: SiRender,
+    desc: "Backend server hosting for Node.js APIs with Git deployment, SSL support, and managed services.",
+  },
+  {
+    category: "Deployment",
+    title: "Cloudinary",
+    icon: SiCloudinary,
+    desc: "Media asset storage with automatic optimization, resizing, and global CDN delivery.",
+  },
+   {
+    category: "Deployment",
+    title: "Clever Cloud",
+    icon: SiClevercloud,
+    desc: "Knowledge in hosting scalable and secure MySQL databases for production workloads.",
+  },
+  {
+    category: "Deployment",
+    title: "cPanel",
+    icon: FaCpanel,
+    desc: "Experience deploying full-stack apps using cPanel with database integration and custom domains.",
+  },
+
+  // ===== Programming Languages =====
+  {
+    category: "Programming Languages",
     title: "Java",
     icon: RiJavaLine,
-    desc: "Skilled in Java with OOP concepts, exception handling, and string/array manipulation.",
+    desc: "Good understanding of OOP concepts, arrays, strings, and exception handling.",
   },
+
+   // ===== Version Control Tools =====
+
   {
-    title: "HTML",
-    icon: FaHtml5,
-    desc: "Proficient in HTML5 for semantic, accessible, and structured web content.",
-  },
-  {
-    title: "CSS",
-    icon: FaCss3Alt,
-    desc: "Skilled in CSS with flexbox, grid, and responsive media queries for elegant layouts.",
-  },
-  {
-    title: "Javascript",
-    icon: IoLogoJavascript,
-    desc: "Strong in JavaScript functions, arrays, DOM manipulation for interactivity.",
-  },
-  {
-    title: "SQL",
-    icon: SiMysql,
-    desc: "Strong in SQL - DDL, DML, DQL including SELECT, WHERE, ORDER BY, JOINs.",
-  },
-  {
-    title: "GIT",
+    category: "Version Control",
+    title: "Git & GitHub",
     icon: FaGitAlt,
-    desc: "Version control with Git & GitHub. Managing branches, merge conflicts, and commits.",
+    desc: "Version control, branching, merging, and collaborative workflows.",
   },
+
+  // ===== Development Tools =====
+
+  {
+    category: "Tools",
+    title: "VS Code",
+    icon: VscVscode,
+    desc: "Primary code editor with extensions for frontend and backend development.",
+  },
+  {
+    category: "Tools",
+    title: "IntelliJ IDEA",
+    icon: SiIntellijidea,
+    desc: "Java development IDE for OOP projects with advanced debugging tools.",
+  },
+  {
+    category: "Tools",
+    title: "Postman",
+    icon: SiPostman,
+    desc: "API testing and debugging for backend development workflows.",
+  }
 ];
+
+
+
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -71,8 +183,22 @@ const cardVariants = {
 };
 
 export const Skills = () => {
+
+const categories = ["All", ...new Set(skills.map(skill => skill.category))];
+
+const [selectedCategory, setSelectedCategory] = useState("All");
+const filteredSkills =
+        selectedCategory === "All"
+            ? skills
+            : skills.filter(
+                  (skill) => skill.category === selectedCategory
+              );
+
   return (
-    <div id="skills">
+    <div>
+
+      <div id="skills">
+        
       <motion.h1
         className="title"
         initial="hidden"
@@ -83,9 +209,23 @@ export const Skills = () => {
       >
         SKILLS
       </motion.h1>
-
+      <div className="flex flex-wrap justify-center gap-4 mb-8">
+                {categories.map((category) => (
+                    <button
+                        key={category}
+                        onClick={() => setSelectedCategory(category)}
+                        className={`px-6 py-2 rounded-full text-sm hover:cursor-pointer font-medium border-1 border-primary ${
+                            selectedCategory === category
+                                ? " bg-indigo-600 text-white"
+                                : "bg-transparent text-white-600"
+                        } transition duration-300`}
+                    >
+                        {category}
+                    </button>
+                ))}
+            </div>
       <div className="skill-cards flex flex-wrap items-center justify-center p-5 gap-5 max-md:grid-cols-1">
-        {skills.map((skill, index) => {
+        {filteredSkills.map((skill, index) => {
           const IconComponent = skill.icon;
           return (
             <motion.div
@@ -111,6 +251,7 @@ export const Skills = () => {
           );
         })}
       </div>
+    </div>
     </div>
   );
 };
