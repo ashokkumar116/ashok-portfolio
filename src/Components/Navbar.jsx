@@ -26,7 +26,7 @@ export const Navbar = () => {
 
             className="flex backdrop-blur-[10px] justify-between items-center block space-x-3 shadow-xl/20 z-[50] p-4 bg-transparent border-b-2 border-gray-800 fixed max-md:fixed top-0 w-[100%] align-center max-md:dropdown max-md:w-full">
                 <div className="logo flex items-center">
-                    <a href="#"><h1 className="text-[clamp(1.5rem,2cqw,5rem)] font-bold text-primary">ASHOK KUMAR P</h1></a>
+                    <a href="#"><h1 className="text-[clamp(1.5rem,2cqw,5rem)] font-bold text-center text-primary">ASHOK KUMAR P</h1></a>
                 </div>
                 <ul className="flex space-x-3 justify-center items-center text-primary font-medium hidden md:flex max-md:dropdown-content">
                     <a

@@ -192,14 +192,14 @@ export const Projects = () => {
             <AnimatePresence>
                 {modalData && (
                     <motion.div
-                        className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 max-md:w-full max-md:p-5"
+                        className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 max-md:w-full max-md:p-5 overflow-y-scroll"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={() => setModalData(null)}
                     >
                         <motion.div
-                            className="bg-gray-900 max-w-lg w-full rounded-xl p-6 shadow-lg relative z-10 max-md:w-full border-1 border-gray-500"
+                            className="bg-gray-900 max-sm:mt-27 max-w-lg w-full rounded-xl p-6 shadow-lg relative z-10 max-md:w-full border-1 border-gray-500 "
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             exit={{ scale: 0.8, opacity: 0 }}
