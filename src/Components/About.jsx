@@ -77,12 +77,13 @@ export const About = () => {
                         a small village in Ariyalur, Tamil Nadu. I hold a
                         Bachelor's degree in Computer Science and Engineering
                         and have hands-on experience in building end-to-end web
-                        applications using React.js, Tailwind CSS, Node.js,
-                        Express.js, and SQL. I also have experience in Java. I
+                        applications using React.js, Typescript, Tailwind CSS, Node.js,
+                        Express.js, MongoDB and SQL and Mobile applications with React Native and NativeWind.
+                        I also have experience in Java. I
                         specialize in developing clean, maintainable code and
-                        building scalable web solutions that solve real-world
-                        problems. Passionate about learning and continuously
-                        improving, I’m known for being a quick learner,
+                        building scalable Application solutions that solve real-world
+                        problems. I'm Passionate about learning and continuously
+                        improving myself and I’m known for being a quick learner,
                         problem-solver, and team collaborator who thrives in
                         dynamic and challenging environments. Whether it's
                         designing a smooth user experience or writing efficient

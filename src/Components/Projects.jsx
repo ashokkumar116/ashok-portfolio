@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, {useState} from "react";
+import {motion, AnimatePresence} from "framer-motion";
 import weather from "../assets/images/weather.png";
 import qrcode from "../assets/images/qrcode.png";
 import tictactoe from "../assets/images/tictactoe.png";
@@ -7,6 +7,7 @@ import memory from "../assets/images/memory.png";
 import notesApp from "../assets/images/NotesApp.png";
 import TaskPilot from "../assets/images/TaskPilot.png";
 import Quenzy from "../assets/images/Quenzy.png";
+import movieflix from "../assets/images/movieflix.png";
 
 const projects = [
     {
@@ -48,6 +49,22 @@ const projects = [
         ],
         github: "https://github.com/ashokkumar116/employee_task_management_system",
         live: "https://taskpilot-by-ashok-kumar-p.netlify.app",
+    },
+    {
+        title: "MovieFlix - A React Native Mobile App",
+        description:
+            "MovieFlix is a React Native (Expo) mobile application styled with NativeWind, designed to browse and search movies with an intuitive and modern UI. It also includes a trending movies algorithm powered by Appwrite (BaaS), which stores user searches in the database and displays trending results on the home page.",
+        category: "Mobile Apps",
+        image: movieflix,
+        tech: [
+            "React Native",
+            "TypeScript",
+            "Expo",
+            "NativeWind",
+            "Appwrite",
+        ],
+        github: "https://github.com/ashokkumar116/mobile_movie_app",
+        live: "#",
     },
     {
         title: "Modern Notes Taking App",
@@ -120,8 +137,8 @@ export const Projects = () => {
         selectedCategory === "All"
             ? projects
             : projects.filter(
-                  (project) => project.category === selectedCategory
-              );
+                (project) => project.category === selectedCategory
+            );
 
     return (
         <section id="projects" className="py-10 px-5 bg-transparent relative">
@@ -154,10 +171,10 @@ export const Projects = () => {
                         <motion.div
                             key={index}
                             layout
-                            initial={{ opacity: 0, y: 50 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, amount: 0.2 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            initial={{opacity: 0, y: 50}}
+                            whileInView={{opacity: 1, y: 0}}
+                            viewport={{once: true, amount: 0.2}}
+                            transition={{duration: 0.5, delay: index * 0.1}}
                             onClick={() => setModalData(project)}
                             className="cursor-pointer bg-transparent border-2 border-primary shadow-md rounded-lg p-4 hover:shadow-xl transition duration-300 hover:scale-105"
                         >
@@ -193,16 +210,16 @@ export const Projects = () => {
                 {modalData && (
                     <motion.div
                         className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 max-md:w-full max-md:p-5 overflow-y-scroll"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        exit={{opacity: 0}}
                         onClick={() => setModalData(null)}
                     >
                         <motion.div
                             className="bg-gray-900 max-sm:mt-27 max-w-lg w-full rounded-xl p-6 shadow-lg relative z-10 max-md:w-full border-1 border-gray-500 "
-                            initial={{ scale: 0.8, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            exit={{ scale: 0.8, opacity: 0 }}
+                            initial={{scale: 0.8, opacity: 0}}
+                            animate={{scale: 1, opacity: 1}}
+                            exit={{scale: 0.8, opacity: 0}}
                             onClick={(e) => e.stopPropagation()}
                         >
                             <button

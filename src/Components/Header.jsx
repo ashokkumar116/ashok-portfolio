@@ -3,12 +3,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import resume from "../assets/ASHOK KUMAR P RESUME.pdf";
 
 const roles = [
-  "Full Stack Developer",
-  "Front End Developer",
-  "Back End Developer",
-  "React.js Developer",
-  "Node.js Developer",
-  "Java Developer",
+    "Full Stack Developer",
+    "Mobile App Developer",
+    "MERN Stack Developer",
+    "React Native Developer",
+    "Front End Developer",
+    "React.js Developer",
+    "Back End Developer",
+    "Node.js Developer",
 ];
 
 const containerVariants = {
