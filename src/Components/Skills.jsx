@@ -24,10 +24,18 @@ import {SiTypescript} from "react-icons/si";
 import {SiMongodb} from "react-icons/si";
 import {SiWebstorm} from "react-icons/si";
 import {SiExpo} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+
 
 
 const skills = [
     // ===== Frontend =====
+    {
+        category: "Frontend",
+        title: "NextJs",
+        icon: TbBrandNextjs,
+        desc: "Experienced in building server-side rendered and statically generated React applications, with routing, API routes, and performance optimization.",
+    },
     {
         category: "Frontend",
         title: "React.js",
