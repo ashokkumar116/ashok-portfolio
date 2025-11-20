@@ -8,8 +8,33 @@ import notesApp from "../assets/images/NotesApp.png";
 import TaskPilot from "../assets/images/TaskPilot.png";
 import Quenzy from "../assets/images/Quenzy.png";
 import movieflix from "../assets/images/movieflix.png";
+import groundzero from "../assets/images/groundzero.png";
+
 
 const projects = [
+    {
+        title: "GroundZero - Civic Issue Reporting & Volunteer Collaboration Platform",
+        description:
+            "GroundZero is a platform where users can report local issues (roads, waste, pollution) and volunteers can collaborate to resolve them. Includes issue reporting with images, categories, status tracking, and a volunteer dashboard.",
+        category: "Full Stack",
+        image: groundzero ,
+        tech: [
+            "React.js",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Mongoose",
+            "JWT Authentication",
+            "Cloudinary",
+            "Multer",
+            "PrimeReact",
+            "MaterialUI"
+        ],
+        github: "https://github.com/ashokkumar116/GroundZero-A-Community-Reporting-Platform", 
+        live: "#",
+        status: "In Development"
+    },
     {
         title: "Quenzy - Full-Stack E-Commerce Platform",
         description:
@@ -29,6 +54,7 @@ const projects = [
         ],
         github: "https://github.com/ashokkumar116/Quenzy---Ecommerce-Website",
         live: "https://quenzy.netlify.app/",
+        status:"Completed"
     },
     {
         title: "Employee Task Management System",
@@ -49,6 +75,7 @@ const projects = [
         ],
         github: "https://github.com/ashokkumar116/employee_task_management_system",
         live: "https://taskpilot-by-ashok-kumar-p.netlify.app",
+        status:"Completed"
     },
     {
         title: "MovieFlix - A React Native Mobile App",
@@ -65,6 +92,7 @@ const projects = [
         ],
         github: "https://github.com/ashokkumar116/mobile_movie_app",
         live: "#",
+        status:"Completed"
     },
     {
         title: "Modern Notes Taking App",
@@ -84,6 +112,7 @@ const projects = [
         ],
         github: "https://github.com/ashokkumar116/modern_notes_app",
         live: "https://notes-app-by-ashok.netlify.app",
+        status:"Completed"
     },
     {
         title: "Weather App",
@@ -94,6 +123,7 @@ const projects = [
         tech: ["React", "Tailwind", "API"],
         github: "https://github.com/ashokkumar116/weather-app",
         live: "https://weather-app-by-ashok.netlify.app",
+        status:"Completed"
     },
     {
         title: "QR Code Generator",
@@ -104,6 +134,7 @@ const projects = [
         tech: ["React", "Tailwind", "API"],
         github: "https://github.com/ashokkumar116/qr-code-generator",
         live: "https://qr-code-generator-by-ashok.netlify.app",
+        status:"Completed"
     },
     {
         title: "Tic Tac Toe Game",
@@ -114,6 +145,7 @@ const projects = [
         tech: ["React", "Tailwind"],
         github: "https://github.com/ashokkumar116/tic-tac-toe-game",
         live: "https://tic-tac-toe-by-ashok.netlify.app",
+        status:"Completed"
     },
     {
         title: "Memory Game",
@@ -124,6 +156,7 @@ const projects = [
         tech: ["React", "Tailwind", "localStorage"],
         github: "https://github.com/ashokkumar116/memory-game",
         live: "https://memory-game-by-ashok.netlify.app",
+        status:"Completed"
     },
 ];
 
@@ -176,8 +209,9 @@ export const Projects = () => {
                             viewport={{once: true, amount: 0.2}}
                             transition={{duration: 0.5, delay: index * 0.1}}
                             onClick={() => setModalData(project)}
-                            className="cursor-pointer bg-transparent border-2 border-primary shadow-md rounded-lg p-4 hover:shadow-xl transition duration-300 hover:scale-105"
+                            className="cursor-pointer bg-transparent border-2 border-primary shadow-md rounded-lg p-4 hover:shadow-xl transition duration-300 hover:scale-105 relative"
                         >
+                            <span className={`absolute z-10 ${project.status === "Completed" ? "bg-gradient-to-br from-green-500 to-green-800" : "bg-gradient-to-br from-red-500 to-red-800"} px-2 py-1 rounded-lg text-[10px] right-3 top-3 text-white`}>{project.status}</span>
                             <div className="overflow-hidden rounded-md mb-4">
                                 <motion.img
                                     src={project.image}
@@ -216,7 +250,7 @@ export const Projects = () => {
                         onClick={() => setModalData(null)}
                     >
                         <motion.div
-                            className="bg-gray-900 max-sm:mt-27 max-w-lg w-full rounded-xl p-6 shadow-lg relative z-10 max-md:w-full border-1 border-gray-500 "
+                            className="bg-gray-900 max-w-lg w-full rounded-xl p-6 shadow-lg relative z-10 max-md:w-full border-1 border-gray-500 h-[80%] overflow-y-scroll"
                             initial={{scale: 0.8, opacity: 0}}
                             animate={{scale: 1, opacity: 1}}
                             exit={{scale: 0.8, opacity: 0}}
